@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
 
 module.exports = (webpackEnv, { mode }) => {
   const isEnvDevelopment = mode === 'development'
@@ -43,6 +44,9 @@ module.exports = (webpackEnv, { mode }) => {
     },
     resolve: {
       extensions: ['.tsx', '.ts', '.js'],
+      plugins: [new TsconfigPathsPlugin({
+        extensions: ['.ts', '.tsx', '.css', '.less', '.scss', '.png', '.jpg', '.jpeg', '.svg'],
+      })],
     },
     module: {
       rules: [

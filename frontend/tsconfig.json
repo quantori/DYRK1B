@@ -1,5 +1,15 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["./*"],
+      "@assets/*": ["assets/*"],
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
+      "@router/*": ["router/*"],
+      "@store/*": ["store/*"],
+      "@utils/*": ["utils/*"]
+    },
     "target": "ES2020",
     "lib": [
       "dom",
