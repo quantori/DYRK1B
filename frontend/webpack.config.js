@@ -3,24 +3,43 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
-module.exports = webpackEnv => {
-  const isEnvDevelopment = webpackEnv === 'development'
-  const isEnvProduction = webpackEnv === 'production'
+module.exports = (webpackEnv, { mode }) => {
+  const isEnvDevelopment = mode === 'development'
+  const isEnvProduction = mode === 'production'
 
   return {
     mode: isEnvProduction ? 'production' : isEnvDevelopment && 'development',
     devtool: isEnvProduction ? 'hidden-source-map' : 'source-map',
     devServer: {
       open: true,
+      compress: true,
+      historyApiFallback: true,
+      client: {
+        logging: 'warn',
+        overlay: { errors: true, warnings: true },
+      },
     },
     entry: {
       main: path.resolve(__dirname, './src/index.tsx'),
     },
     output: {
       path: path.resolve(__dirname, './build'),
-      filename: '[name].js',
       clean: true,
+      filename: isEnvProduction
+        ? 'static/js/[name].[contenthash:8].js'
+        : isEnvDevelopment && 'static/js/[name].js',
+    },
+    optimization: {
+      minimize: isEnvProduction,
+      minimizer: [
+        new CssMinimizerPlugin(),
+      ],
+      splitChunks: {
+        chunks: 'all',
+      },
     },
     resolve: {
       extensions: ['.tsx', '.ts', '.js'],
@@ -42,26 +61,21 @@ module.exports = webpackEnv => {
           },
         },
         {
-          test: /\.css$/,
+          test: /\.(sa|sc|c)ss$/,
           use: [
-            'style-loader',
+            isEnvDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
             'css-loader',
+            'postcss-loader',
+            'sass-loader',
           ],
         },
         {
           test: /\.less$/,
           use: [
-            'style-loader',
+            isEnvDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
             'css-loader',
+            'postcss-loader',
             'less-loader',
-          ],
-        },
-        {
-          test: /\.s[ac]ss$/,
-          use: [
-            'style-loader',
-            'css-loader',
-            'sass-loader',
           ],
         },
         {
@@ -81,6 +95,10 @@ module.exports = webpackEnv => {
       new ForkTsCheckerWebpackPlugin({
         async: false,
       }),
-    ],
+    ].concat(isEnvDevelopment ? [] : [
+      new MiniCssExtractPlugin({
+        filename: 'static/css/[name].[contenthash:8].css',
+      }),
+    ]),
   }
 }
