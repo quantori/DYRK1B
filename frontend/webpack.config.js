@@ -6,6 +6,7 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = (webpackEnv, { mode }) => {
   const isEnvDevelopment = mode === 'development'
@@ -29,6 +30,7 @@ module.exports = (webpackEnv, { mode }) => {
     output: {
       path: path.resolve(__dirname, './build'),
       clean: true,
+      assetModuleFilename: 'static/media/[hash][ext]',
       filename: isEnvProduction
         ? 'static/js/[name].[contenthash:8].js'
         : isEnvDevelopment && 'static/js/[name].js',
@@ -92,6 +94,16 @@ module.exports = (webpackEnv, { mode }) => {
       new webpack.ProgressPlugin(),
       new HtmlWebpackPlugin({
         template: path.join(__dirname, './public/index.html'),
+      }),
+      new CopyPlugin({
+        patterns: [
+          {
+            from: 'public',
+            globOptions: {
+              ignore: ['**/index.html'],
+            },
+          },
+        ],
       }),
       new webpack.ProvidePlugin({
         React: 'react',
