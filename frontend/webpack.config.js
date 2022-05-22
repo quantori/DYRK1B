@@ -3,6 +3,7 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
+const StyleLintPlugin = require('stylelint-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
@@ -110,6 +111,11 @@ module.exports = (webpackEnv, { mode }) => {
       }),
       new ForkTsCheckerWebpackPlugin({
         async: false,
+      }),
+      new StyleLintPlugin({
+        configFile: path.resolve(__dirname, './stylelint.config.js'),
+        context: path.resolve(__dirname, './src'),
+        files: '**/*.(css|scss|less)',
       }),
     ].concat(isEnvDevelopment ? [] : [
       new MiniCssExtractPlugin({
