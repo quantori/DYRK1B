@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     browser: true,
-    es2020: true,
+    es2022: true,
   },
   extends: [
     'airbnb',
@@ -15,7 +15,8 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 2020,
+    ecmaVersion: 2022,
+    sourceType: 'module',
   },
   plugins: [
     'react',
@@ -87,6 +88,10 @@ module.exports = {
         prev: '*',
         next: 'block-like',
       },
+    ],
+    'react/function-component-definition': [
+      'warn',
+      { namedComponents: 'arrow-function' },
     ],
     'react/jsx-filename-extension': [
       'warn',

@@ -22,11 +22,6 @@ module.exports = {
   },
   overrides: [
     {
-      customSyntax: 'postcss-scss',
-      files: ['**/*.scss'],
-      rules: {},
-    },
-    {
       customSyntax: 'postcss-less',
       files: ['**/*.less'],
       rules: {},

@@ -9,11 +9,14 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 
+// webpack
+const lessOptionsModifyVars = require('./webpack/lessOptionsModifyVars.js')
+
 module.exports = (webpackEnv, { mode }) => {
   const isEnvDevelopment = mode === 'development'
   const isEnvProduction = mode === 'production'
 
-  return {
+  const config = {
     mode: isEnvProduction ? 'production' : isEnvDevelopment && 'development',
     devtool: isEnvProduction ? 'hidden-source-map' : 'source-map',
     devServer: {
@@ -48,7 +51,7 @@ module.exports = (webpackEnv, { mode }) => {
     resolve: {
       extensions: ['.tsx', '.ts', '.js'],
       plugins: [new TsconfigPathsPlugin({
-        extensions: ['.ts', '.tsx', '.css', '.less', '.scss', '.png', '.jpg', '.jpeg', '.svg'],
+        extensions: ['.ts', '.tsx', '.css', '.less', '.png', '.jpg', '.jpeg', '.svg'],
       })],
     },
     module: {
@@ -68,12 +71,11 @@ module.exports = (webpackEnv, { mode }) => {
           },
         },
         {
-          test: /\.(sa|sc|c)ss$/,
+          test: /\.css$/,
           use: [
             isEnvDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
             'css-loader',
             'postcss-loader',
-            'sass-loader',
           ],
         },
         {
@@ -86,6 +88,7 @@ module.exports = (webpackEnv, { mode }) => {
               loader: 'less-loader',
               options: {
                 lessOptions: {
+                  modifyVars: lessOptionsModifyVars,
                   javascriptEnabled: true,
                 },
               },
@@ -122,7 +125,7 @@ module.exports = (webpackEnv, { mode }) => {
       new StyleLintPlugin({
         configFile: path.resolve(__dirname, './stylelint.config.js'),
         context: path.resolve(__dirname, './src'),
-        files: '**/*.(css|scss|less)',
+        files: '**/*.(css|less)',
       }),
     ].concat(isEnvDevelopment ? [] : [
       new MiniCssExtractPlugin({
@@ -130,4 +133,6 @@ module.exports = (webpackEnv, { mode }) => {
       }),
     ]),
   }
+
+  return config
 }
