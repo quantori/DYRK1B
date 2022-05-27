@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  ::-webkit-scrollbar {
+    @apply w-3 h-3;
+  }
+
+  * {
+    /* W3C standard just for Firefox */
+    scrollbar-width: thin;
+  }
+
+  html {
+    tab-size: 2;
+  }
+
+  html,
+  body,
+  #root {
+    @apply h-full text-dark-500;
+
+    font-size: 16px;
+  }
+
+  #root {
+    @apply flex;
+  }
+}
+
+// @layer components {}
+// @layer utilities {}
