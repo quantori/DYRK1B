@@ -1,10 +1,9 @@
 import './assets/index.less'
 
+import Routing from '@router/Routing'
+
 const App = () => (
-  <h1>
-    <span>My app </span>
-    <code>{process.env.NODE_ENV} env</code>
-  </h1>
+  <Routing />
 )
 
 export default App
