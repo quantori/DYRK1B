@@ -1,18 +1,12 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, useRoutes } from 'react-router-dom'
 
-import Login from '@pages/Login'
-import Settings from '@pages/Settings'
-import The404 from '@pages/The404'
+import routes from '@router/routes'
+
+const UsedRoutes = () => useRoutes(routes)
 
 const Routing = () => (
   <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Login />} />
-      <Route path="login" element={<Login />} />
-      <Route path="settings" element={<Settings />} />
-      <Route path="*" element={<The404 />} />
-    </Routes>
+    <UsedRoutes />
   </BrowserRouter>
 )
-
 export default Routing
