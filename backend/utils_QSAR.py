@@ -204,7 +204,7 @@ def ApplyModel(model_QSAR, df_test) :
     else:
         XX_test_unscaled = np.array( df_test.values, dtype='float64' )
 
-    yy_pred_test_unscaled = utils_opt.ClfPredictFinal( clf_summary, XX_test_unscaled )
+    yy_pred_test_unscaled = utils_opt.ClfPredictFinal(clf_summary, XX_test_unscaled)
 
     df_pred = pd.DataFrame(yy_pred_test_unscaled, columns=[ 'Predicted' ], index = df_test.index)
     
