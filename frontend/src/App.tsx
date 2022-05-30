@@ -1,4 +1,4 @@
-import './assets/index.css'
+import './assets/index.less'
 
 export default function App() {
   return (

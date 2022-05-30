@@ -82,7 +82,14 @@ module.exports = (webpackEnv, { mode }) => {
             isEnvDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
             'css-loader',
             'postcss-loader',
-            'less-loader',
+            {
+              loader: 'less-loader',
+              options: {
+                lessOptions: {
+                  javascriptEnabled: true,
+                },
+              },
+            },
           ],
         },
         {
