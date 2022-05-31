@@ -1,0 +1,40 @@
+version: '3.7'
+
+services:
+
+  qsar-be:
+    build:
+      context: src
+      dockerfile: ./Dockerfile
+    env_file: .env
+    container_name: qsar-be
+    volumes:
+      - "./src:/app/src"
+      - "qsar_data:/data"
+    working_dir: "/app/src"
+    command: "python3 main.py"
+    stdin_open: true
+    tty: true
+    ports:
+      - "${QSAR_PORT}:${QSAR_PORT}"
+    networks:
+      - qsar
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb-qsar-be
+    volumes:
+      - mongodb_data_container:/data/db
+    ports:
+      - 27017:27017
+    networks:
+      - qsar
+
+volumes:
+  qsar_data:
+  mongodb_data_container:
+
+networks:
+  qsar:

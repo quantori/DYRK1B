@@ -1,0 +1,13 @@
+# API Server
+fastapi
+pydantic[email]
+python-multipart
+uvicorn[standard]
+
+# Database
+motor==2.4.0
+
+# Development
+numpy==1.20.1
+pandas==1.2.4
+pymongo==3.11.0

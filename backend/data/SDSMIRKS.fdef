@@ -1,0 +1,1284 @@
+# $Id$
+#
+# RDKit SD fdef file.
+#
+
+DefineFeature CustomF0001 [N,n,O,o]
+  Family 1
+EndFeature
+
+DefineFeature CustomF0002 [$([O,S;H1][!#1;!$(*=[O,N,P,S])]),$(N#C),$([O;H0]-[!#1]),$([S;H0&X2]),$([O,S]=[C,S,N,P;!$([C,S,N,P]-[O;H1])]),$([o,s]),$([n;H0&r5]),$([O,S]=a)]
+  Family 2
+EndFeature
+
+DefineFeature CustomF0003 [NH1,NH2,nH,OH]
+  Family 3
+EndFeature
+
+DefineFeature CustomF0004 [$([N;!H0][C,S]=[O,S]),$([n;H1;+0]),$([O,S;H1][!#1;!$(*=[O,N,P,S])])]
+  Family 4
+EndFeature
+
+DefineFeature CustomF0005 [$([N;!H0][C,S]=[O,S]),$([n;H1;+0]),$([O,S;H1][CX4,a])]
+  Family 5
+EndFeature
+
+DefineFeature CustomF0006 [$([N+](*)(*)(*)*),$([n+](*)(*)*)]
+  Family 6
+EndFeature
+
+DefineFeature CustomF0007 [r;!r3;!r4;!r5;!r6;!r7;!r8;!r9]
+  Family 7
+EndFeature
+
+DefineFeature CustomF0008 [$([O](=[C&!R]([#6])[NH1,NH2]))]
+  Family 8
+EndFeature
+
+DefineFeature CustomF0009 [$([O](=[C&!R]([#6])[NH0]))]
+  Family 9
+EndFeature
+
+DefineFeature CustomF0010 [$([S&!R](=O)(=O)([#6])[NH1,NH2])]
+  Family 10
+EndFeature
+
+DefineFeature CustomF0011 [$([S&!R](=O)(=O)([#6])[NH0])]
+  Family 11
+EndFeature
+
+DefineFeature CustomF0012 [$(N[C&!R]=[N&!R])]
+  Family 12
+EndFeature
+
+#DefineFeature CustomF0013 [$([NH0&!R]([CX4])([CX4])[CX4])&!$(([NH0&!R]([CX4])([CX4])[CX4].[OH1][C,S,P](=O)))]
+#  Family 13
+#EndFeature
+
+#DefineFeature CustomF0014 [$([NH1&!R]([CX4,a])[CX4])&!$(([NH1&!R]([CX4,a])[CX4].[OH1][C,S,P](=O)))]
+#  Family 14
+#EndFeature
+
+DefineFeature CustomF0015 [$(C(Br)(Br)Br)]
+  Family 15
+EndFeature
+
+DefineFeature CustomF0016 [$(C(F)(F)F)]
+  Family 16
+EndFeature
+
+DefineFeature CustomF0017 [$([CH0]([CX4,a])([CX4,a])([CX4,a])[CX4,a])]
+  Family 17
+EndFeature
+
+DefineFeature CustomF0018 [$([CH1]([CX4,a])([CX4,a])[CX4,a])]
+  Family 18
+EndFeature
+
+DefineFeature CustomF0019 [$([CH2]([CX4,a])[CX4,a])]
+  Family 19
+EndFeature
+
+DefineFeature CustomF0020 [$([CH2][O,S,N])]
+  Family 20
+EndFeature
+
+DefineFeature CustomF0021 [$([CH2][CH2])]
+  Family 21
+EndFeature
+
+DefineFeature CustomF0022 [$([CH2][CH2][CH2][CH2][CH2])]
+  Family 22
+EndFeature
+
+DefineFeature CustomF0023 [$([CH3][CX4,a])]
+  Family 23
+EndFeature
+
+DefineFeature CustomF0024 [$([CH3][O,S,N])]
+  Family 24
+EndFeature
+
+DefineFeature CustomF0025 [SX2]([#6])[SX2][#6]
+  Family 25
+EndFeature
+
+DefineFeature CustomF0026 [$([NH0][C](=O)[#6])]
+  Family 26
+EndFeature
+
+DefineFeature CustomF0027 [$([O,S&R]([CX4,a])[C,S&!R]=O)]
+  Family 27
+EndFeature
+
+DefineFeature CustomF0028 [$([CX4]([F,Cl,Br,I])[CX4,a])]
+  Family 28
+EndFeature
+
+DefineFeature CustomF0029 [$(C(=O)C=[CH])]
+  Family 29
+EndFeature
+
+DefineFeature CustomF0030 [a]
+  Family 30
+EndFeature
+
+DefineFeature CustomF0031 [NH1](C(=O)[#6])C(=O)[#6]
+  Family 31
+EndFeature
+
+DefineFeature CustomF0032 [NX3]-[O]
+  Family 32
+EndFeature
+
+DefineFeature CustomF0033 [*]-[*]
+  Family 33
+EndFeature
+
+DefineFeature CustomF0034 [$([OH1][CH2,CH1]C(=O))]
+  Family 34
+EndFeature
+
+DefineFeature CustomF0035 [$([OH0][C,S](=O)(N))]
+  Family 35
+EndFeature
+
+DefineFeature CustomF0036 P(=[S,O])[NX3]
+  Family 36
+EndFeature
+
+DefineFeature CustomF0037 P(=[O,S])[O,S]
+  Family 37
+EndFeature
+
+DefineFeature CustomF0038 [$([O](=[C&R]([#6])[NH1,NH2]))]
+  Family 38
+EndFeature
+
+DefineFeature CustomF0039 [$([O](=[C&R]([#6])[NH0]))]
+  Family 39
+EndFeature
+
+DefineFeature CustomF0040 [SX2;v2]
+  Family 40
+EndFeature
+
+DefineFeature CustomF0041 [$([S&R](=O)(=O)([#6])[NH1,NH2])]
+  Family 41
+EndFeature
+
+DefineFeature CustomF0042 [$([S&R](=O)(=O)([#6])[NH0])]
+  Family 42
+EndFeature
+
+DefineFeature CustomF0043 [$(N[C&R]=[N&R])]
+  Family 43
+EndFeature
+
+#DefineFeature CustomF0044 [$([NH0&R]([CX4])([CX4])[CX4])&!$(([NH0&R]([CX4])([CX4])[CX4].[OH1][C,S,P](=O)))]
+#  Family 44
+#EndFeature
+
+DefineFeature CustomF0045 [$([NH1&R]([CX4,a])[CX4])]
+  Family 45
+EndFeature
+
+DefineFeature CustomF0046 [$([NH2][S](=O)[#6]),$([NH1][S](=O)[#6])]
+  Family 46
+EndFeature
+
+DefineFeature CustomF0047 [$([NH0][S](=O)[#6])]
+  Family 47
+EndFeature
+
+DefineFeature CustomF0048 [$([CH2,CH1]([C,N,S](=O))[C,N,S](=O))]
+  Family 48
+EndFeature
+
+DefineFeature CustomF0049 [$(O=[CH1][CX4,a])]
+  Family 49
+EndFeature
+
+DefineFeature CustomF0050 [$([OH][CX4])&!$([OH]C(C)(C)C)]
+  Family 50
+EndFeature
+
+DefineFeature CustomF0051 [$(C=C[CX4&!H0])]
+  Family 51
+EndFeature
+
+DefineFeature CustomF0052 [$([NH1](C(=O))C(=O))]
+  Family 52
+EndFeature
+
+DefineFeature CustomF0053 [$([NH0]CC[N,O])]
+  Family 53
+EndFeature
+
+DefineFeature CustomF0054 [$([NH]CC[N,O])]
+  Family 54
+EndFeature
+
+DefineFeature CustomF0055 [$([O]=[*])]
+  Family 55
+EndFeature
+
+DefineFeature CustomF0056 [$([Br][a])]
+  Family 56
+EndFeature
+
+DefineFeature CustomF0057 [$([Cl][a])]
+  Family 57
+EndFeature
+
+DefineFeature CustomF0058 [$([F][a])]
+  Family 58
+EndFeature
+
+DefineFeature CustomF0059 [$([I][a])]
+  Family 60
+EndFeature
+
+DefineFeature CustomF0061 o
+  Family 61
+EndFeature
+
+DefineFeature CustomF0062 [NX3;H1]([a])-[C;!R]=O
+  Family 62
+EndFeature
+
+#DefineFeature CustomF0063 [$([NH2][CX4])&!$(([NH2][CX4].[OH1][C,S,P](=O)))]
+#  Family 63
+#EndFeature
+
+DefineFeature CustomF0064 [$(C1CNc2ccccc2C=N1)]
+  Family 64
+EndFeature
+
+DefineFeature CustomF0065 [$(N1aaC(a)=NCC1)]
+  Family 65
+EndFeature
+
+DefineFeature CustomF0066 [OH][CX4]a
+  Family 66
+EndFeature
+
+DefineFeature CustomF0067 [$([CX4;H1&!R]),$([CX4;H0&!R])]
+  Family 67
+EndFeature
+
+DefineFeature CustomF0068 [S,O]=C([#7])[S,O]
+  Family 68
+EndFeature
+
+DefineFeature CustomF0069 [CX3](O)([O,N])=O
+  Family 69
+EndFeature
+
+DefineFeature CustomF0070 [$([CH2]([CH2])[a])&!$([CH2]([CH2][O,N])[a])]
+  Family 70
+EndFeature
+
+DefineFeature CustomF0071 [$(N(=[*])[O&!R])]
+  Family 71
+EndFeature
+
+DefineFeature CustomF0072 [$(N(=O)=O),$(C#N),$([F,Cl,Br,I])][CX4][$(N(=O)=O),$(C#N),$([F,Cl,Br,I])]
+  Family 72
+EndFeature
+
+DefineFeature CustomF0073 N(=N[a])[a]
+  Family 73
+EndFeature
+
+DefineFeature CustomF0074 [NX2]=[NX2]
+  Family 74
+EndFeature
+
+DefineFeature CustomF0075 O=CC=CC=O
+  Family 75
+EndFeature
+
+DefineFeature CustomF0076 [$(CN1C=CC=CC1),$([SH][CX4])]
+  Family 76
+EndFeature
+
+DefineFeature CustomF0077 [S](-*)-*
+  Family 77
+EndFeature
+
+DefineFeature CustomF0078 [S](-*)(-*)=*
+  Family 78
+EndFeature
+
+DefineFeature CustomF0079 [SH]-*
+  Family 79
+EndFeature
+
+DefineFeature CustomF0080 [s](=*)(:*):*
+  Family 80
+EndFeature
+
+DefineFeature CustomF0081 [P](-*)=*
+  Family 81
+EndFeature
+
+DefineFeature CustomF0082 [PH](-*)(-*)=*
+  Family 82
+EndFeature
+
+DefineFeature CustomF0083 [$(C(=O)([C&R])O[C&R]),$([#6]C(=O)O[#6]),$(N1C(=O)CC1),$(CNC(=O)OC)]
+  Family 83
+EndFeature
+
+DefineFeature CustomF0084 [$([O,S]([CX4,a])[CX4,a])&!$(O1CCOC1)]
+  Family 84
+EndFeature
+
+DefineFeature CustomF0085 [F,Cl][CX4][CX4][F,Cl]
+  Family 85
+EndFeature
+
+DefineFeature CustomF0086 [cH0](:[nX2])(:[nX2])[#8,#7,#16,#15,#34,#9,#17,#35,#53]
+  Family 86
+EndFeature
+
+DefineFeature CustomF0087 [OH]c1c([CX4])cccc1[CX4]
+  Family 87
+EndFeature
+
+DefineFeature CustomF0088 [$([OH1][CX4])]
+  Family 88
+EndFeature
+
+DefineFeature CustomF0089 [$(c1(O([CX4]))c[cH][cH][cH][cH]1),$(c1(N([#6])([#6]))c[cH][cH][cH][cH]1),$(c1([NH](C(=O)[#6]))c[cH][cH][cH][cH]1)]
+  Family 89
+EndFeature
+
+DefineFeature CustomF0090 [$([OH1,NH1,nH]~[*]~[*](=O))]
+  Family 90
+EndFeature
+
+DefineFeature CustomF0091 [$([OH1,NH1,nH]~[*]~[*]~[*](=O))]
+  Family 91
+EndFeature
+
+DefineFeature CustomF0092 [$(C1OCCO1)]
+  Family 92
+EndFeature
+
+DefineFeature CustomF0093 [$(C(=O)([#6,CX4])([CX4]))]
+  Family 94
+EndFeature
+
+DefineFeature CustomF0095 [$(O=C([CX4])[CX4,a])]
+  Family 95
+EndFeature
+
+DefineFeature CustomF0096 [$([CH2]([$([#6])&!$([#6]~[#7,#8,S,P])])[$([#6])&!$([#6]~[#7,#8,S,P])]),$([CH3][$([#6])&!$([#6]~[#7,#8,S,P])]),$([cH]([$([#6])&!$([#6]~[#7,#8,S,P])])[$([#6])&!$([#6]~[#7,#8,S,P])]),$([CH1]([$([#6])&!$([#6]~[O,N])])=[CH1][$([#6])&!$([#6]~[O,N])])]
+  Family 96
+EndFeature
+
+DefineFeature CustomF0097 [$([nH0]1([*&!R])aaa2aaaaa21)]
+  Family 97
+EndFeature
+
+DefineFeature CustomF0098 [$([nH]1aaa2aaaaa21)]
+  Family 98
+EndFeature
+
+DefineFeature CustomF0099 na(=O)na(=O)
+  Family 99
+EndFeature
+
+DefineFeature CustomF0100 [$([C,c]([O]N(=O)(=O)))]
+  Family 100
+EndFeature
+
+DefineFeature CustomF0101 [$(c([cH])([cH])N(=O)(=O))]
+  Family 101
+EndFeature
+
+DefineFeature CustomF0102 [$(N(=O)(=O)[#6])]
+  Family 102
+EndFeature
+
+DefineFeature CustomF0103 [$([*&!R])]
+  Family 103
+EndFeature
+
+DefineFeature CustomF0104 [OH][CX4;!R][CX4;!R][OH]
+  Family 104
+EndFeature
+
+DefineFeature CustomF0105 [$([OH]CC[NH]C(C)(C)C),$([OH]C[C&!R][N&R])]
+  Family 105
+EndFeature
+
+DefineFeature CustomF0106 [S,O,N,F,Cl,Br,I]-c:a:a:c-[S,O,N,F,Cl,Br,I]
+  Family 106
+EndFeature
+
+DefineFeature CustomF0107 [OH]c1ccc(cc1)[$([F,Cl,Br,I]),$(N(=O)=O),$(C(F)(F)F)]
+  Family 107
+EndFeature
+
+DefineFeature CustomF0108 [$(C(F)(F)C(F)(F)C(F)(F)C(F)(F))]
+  Family 108
+EndFeature
+
+DefineFeature CustomF0109 [$([OH1]a(a)a(a)n)]
+  Family 109
+EndFeature
+
+DefineFeature CustomF0110 [$([OH1][a])]
+  Family 110
+EndFeature
+
+DefineFeature CustomF0111 [O]=[c]
+  Family 111
+EndFeature
+
+DefineFeature CustomF0112 [$(O1CCCCC1.O1CCCCC1)]
+  Family 112
+EndFeature
+
+DefineFeature CustomF0113 [$([CH1]([OH1])[CH1]([OH1])[CH1]([OH1]))]
+  Family 113
+EndFeature
+
+DefineFeature CustomF0114 [$([n&X2]1ccccc1)]
+  Family 114
+EndFeature
+
+DefineFeature CustomF0115 [$([O]=a1aanaa1),$([O]=a1naaaa1)]
+  Family 115
+EndFeature
+
+DefineFeature CustomF0116 O=[C,c]1[C,O,c]~[C,c][C,c](=O)[C,c]~[C,c]1
+  Family 116
+EndFeature
+
+DefineFeature CustomF0117 [c](:[a])(:[a]):[a]
+  Family 117
+EndFeature
+
+DefineFeature CustomF0118 [$([nH0&r5])]
+  Family 118
+EndFeature
+
+DefineFeature CustomF0119 [$([nH&r5])]
+  Family 119
+EndFeature
+
+DefineFeature CustomF0120 [$([C,S&R]([*&R])(=O)[*&R])]
+  Family 120
+EndFeature
+
+DefineFeature CustomF0121 [$([*&R])]
+  Family 121
+EndFeature
+
+DefineFeature CustomF0122 [OH][CX4;R][CX4;R][OH]
+  Family 122
+EndFeature
+
+DefineFeature CustomF0123 [$([CX2])]
+  Family 123
+EndFeature
+
+DefineFeature CustomF0124 [$([CX3])]
+  Family 124
+EndFeature
+
+DefineFeature CustomF0125 [$(C([*&R])([*&R])([*&R])[*&R])]
+  Family 125
+EndFeature
+
+DefineFeature CustomF0126 [$([C,c](S(=O)(=O)[OH]))]
+  Family 126
+EndFeature
+
+DefineFeature CustomF0127 [SX4](=O)(=O)([#6])[#6]
+  Family 127
+EndFeature
+
+DefineFeature CustomF0128 S(=O)(=O)[NH2]
+  Family 128
+EndFeature
+
+DefineFeature CustomF0129 [$([NH2][a])]
+  Family 129
+EndFeature
+
+DefineFeature CustomF0130 [$([NH2][NH1][a])]
+  Family 130
+EndFeature
+
+DefineFeature CustomF0131 [$([NH2]C(=[NH1])[a])]
+  Family 131
+EndFeature
+
+DefineFeature CustomF0132 [$(N([CX4])([CX4])[CX4])]
+  Family 132
+EndFeature
+
+DefineFeature CustomF0133 [$(C(=S)[SH])]
+  Family 133
+EndFeature
+
+DefineFeature CustomF0134 [S]=C
+  Family 134
+EndFeature
+
+DefineFeature CustomF0135 [$(NC(=[O,S])N)]
+  Family 135
+EndFeature
+
+DefineFeature CustomF0136 O=C([NX3])[NX3]
+  Family 136
+EndFeature
+
+DefineFeature CustomF0137 [$([N,O,a]CCN[CH3]),$([N,O,a]CCN[CH2][CH3])]
+  Family 137
+EndFeature
+
+#DefineFeature CustomF0138 ([NH2][CX4].C(=O)[OH1])
+#  Family 138
+#EndFeature
+
+#DefineFeature CustomF0139 ([NH1]([CX4])[CX4].C(=O)[OH1])
+#  Family 139
+#EndFeature
+
+#DefineFeature CustomF0140 ([NH0]([CX4])([CX4])[CX4].C(=O)[OH1])
+#  Family 140
+#EndFeature
+
+DefineFeature CustomF0141 [$([CX3,c])&!$([#6]=[O])]
+  Family 141
+EndFeature
+
+DefineFeature CustomF0142 [$([CX4])]
+  Family 142
+EndFeature
+
+DefineFeature CustomF0143 [$([OH1][C](=O)([C,c]))]
+  Family 143
+EndFeature
+
+DefineFeature CustomF0144 [$([O;H1][C,c]);!$([O;H1][C]=O)]
+  Family 144
+EndFeature
+
+DefineFeature CustomF0145 [$([O]=[C,c]);!$([O]=[C][OH1])]
+  Family 145
+EndFeature
+
+DefineFeature CustomF0146 [$([O,o,S,s]([*])[*])]
+  Family 146
+EndFeature
+
+DefineFeature CustomF0147 [F,Cl,Br,I]
+  Family 147
+EndFeature
+
+DefineFeature CustomF0148 [$([NX3&!$(*c)&!$(*([C,c]=[O,o,P,S]))&!$(*[C,c]([N,n])=[N,n])&!$(*[c,C]=[n,N][a])&!$(*~[O,N,o,P,S])&!$(*[C,c][Cl,Br,F,I])&!$(*[C,c]O[CH3])&!$(*[C,c]C(F)(F)F)]),$([NH1&!R]C=[NH1;!R]),$([NH1;R][CX2;R&!$(*([Cl,Br,F,N,I,O]))]=[NH0;R][CX4;R&!$(*([Cl,Br,F,I,N,O,S]))][CX4;R&!$(*([Cl,Br,F,I,N,O,S]))]),$([NH1]1[CX4;!$(*([Cl,Br,F,I,O,S]))][CX4;!$(*([Cl,Br,F,I,O,S]))][NH0]=[CH0]1),$([NH1;!R][C;R&!$(*([Cl,Br,F,I,O]))&!$(*([NH1&R]))]=[NH0;R]),$([NH1&R][C&R](=[N&!R])[NH1&R]),$(n1([CX4])cncc1),$([nH]1[cH]n[cH][c]1[CX4]),$([nH]1[cH][n]c([CX4])c1[CX4]),$([n&H0][c&!$(*([Cl,Br,F,I,O]))][n][c&!$(*([Cl,Br,F,I,O]))]([N])[c]);!$([NX3&R][C&R]~[C&R][C](=O)O)]
+  Family 148
+EndFeature
+
+DefineFeature CustomF0149 [$([CX2&H2](=*))]
+  Family 149
+EndFeature
+
+DefineFeature CustomF0150 [$([CX4&H2](-*)-*)]
+  Family 150
+EndFeature
+
+DefineFeature CustomF0151 [$([CH](#*))]
+  Family 151
+EndFeature
+
+DefineFeature CustomF0152 [$([CH](=*)-*)]
+  Family 152
+EndFeature
+
+DefineFeature CustomF0153 [$([cH]([a])[a])]
+  Family 153
+EndFeature
+
+DefineFeature CustomF0154 [$([CX4&H1](-*)(-*)-*)]
+  Family 154
+EndFeature
+
+DefineFeature CustomF0155 [$([CX2&H0](=A)=A)]
+  Family 155
+EndFeature
+
+DefineFeature CustomF0156 [$([CX2&H0](#*)-*)]
+  Family 156
+EndFeature
+
+DefineFeature CustomF0157 [$([C&H0](=*)([A])([A]))]
+  Family 157
+EndFeature
+
+DefineFeature CustomF0158 [$([cH0]([a])([a])-*)]
+  Family 158
+EndFeature
+
+DefineFeature CustomF0159 [$([cH0]([a])([a])[a])]
+  Family 159
+EndFeature
+
+DefineFeature CustomF0160 [$([CX4&H0](-*)(-*)(-*)-*)]
+  Family 160
+EndFeature
+
+DefineFeature CustomF0161 [$([NX4&H3]-*)]
+  Family 161
+EndFeature
+
+DefineFeature CustomF0162 [$([NX3&H2]-*)]
+  Family 162
+EndFeature
+
+DefineFeature CustomF0163 [$([NX4&H2](-*)-*)]
+  Family 163
+EndFeature
+
+DefineFeature CustomF0164 [$([NX2&H1]=*)]
+  Family 164
+EndFeature
+
+DefineFeature CustomF0165 [$([NX3&H1](-*)-*)]
+  Family 165
+EndFeature
+
+DefineFeature CustomF0166 [$([nH]([a])[a])]
+  Family 166
+EndFeature
+
+DefineFeature CustomF0167 [$([NX1]#*)]
+  Family 167
+EndFeature
+
+DefineFeature CustomF0168 [$([NX4&H1](-*)(-*)-*)]
+  Family 168
+EndFeature
+
+DefineFeature CustomF0169 [$([NX2&H0](-*)=*)]
+  Family 169
+EndFeature
+
+DefineFeature CustomF0170 [$([nh0]([a])[a])]
+  Family 170
+EndFeature
+
+DefineFeature CustomF0171 [$([N&H0](-*)(-*)-*)]
+  Family 171
+EndFeature
+
+DefineFeature CustomF0172 [$([NX3](=*)(=*)-*)]
+  Family 172
+EndFeature
+
+DefineFeature CustomF0173 [$([NX3]([a])([a])-*)]
+  Family 173
+EndFeature
+
+DefineFeature CustomF0174 [$([#7+](-*)(-*)(-*)-*)]
+  Family 174
+EndFeature
+
+DefineFeature CustomF0175 [$([OX2H]-*)]
+  Family 175
+EndFeature
+
+DefineFeature CustomF0176 [$([O&X2&H0](-*)-*)]
+  Family 176
+EndFeature
+
+DefineFeature CustomF0177 [$([F]-*)]
+  Family 177
+EndFeature
+
+DefineFeature CustomF0178 [$([SiX4&H3]-*)]
+  Family 178
+EndFeature
+
+DefineFeature CustomF0179 [$([SiX4&H2](-*)-*)]
+  Family 179
+EndFeature
+
+DefineFeature CustomF0180 [$([SiX4&H1](-*)(-*)-*)]
+  Family 180
+EndFeature
+
+DefineFeature CustomF0181 [$([SiX4&H0](-*)(-*)(-*)-*)]
+  Family 181
+EndFeature
+
+DefineFeature CustomF0182 [$([P&H2](-*))]
+  Family 182
+EndFeature
+
+DefineFeature CustomF0183 [$([P&H1](-*)-*)]
+  Family 183
+EndFeature
+
+DefineFeature CustomF0184 [$([P&H0](-*)(-*)-*)]
+  Family 184
+EndFeature
+
+DefineFeature CustomF0185 [$([P](=*)(-*)(-*)-*)]
+  Family 185
+EndFeature
+
+DefineFeature CustomF0186 [$([P](-*)(-*)(-*)(-*)-*)]
+  Family 186
+EndFeature
+
+DefineFeature CustomF0187 [$([S&H1]-*)]
+  Family 187
+EndFeature
+
+DefineFeature CustomF0188 [$([S&H0]=*)]
+  Family 188
+EndFeature
+
+DefineFeature CustomF0189 [$([S&H0](-*)-*)]
+  Family 189
+EndFeature
+
+DefineFeature CustomF0190 [$([S&H0](-[a])-[a])]
+  Family 190
+EndFeature
+
+DefineFeature CustomF0191 [$([S&H0](=*)(-*)-*)]
+  Family 191
+EndFeature
+
+DefineFeature CustomF0192 [$([S&H0](=*)(=*)(-*)-*)]
+  Family 192
+EndFeature
+
+DefineFeature CustomF0193 [$([Cl]-*)]
+  Family 193
+EndFeature
+
+DefineFeature CustomF0194 [$([Br]-*)]
+  Family 194
+EndFeature
+
+DefineFeature CustomF0195 [$([I]-*)]
+  Family 195
+EndFeature
+
+DefineFeature CustomF0196 [$([N,n])&!$([NX3&!$(*c)&!$(*([C,c]=[O,o,P,S]))&!$(*[C,c]([N,n])=[N,n])&!$(*[c,C]=[n,N][a])&!$(*~[O,N,o,P,S])&!$(*[C,c][Cl,Br,F,I])&!$(*[C,c]O[CH3])&!$(*[C,c]C(F)(F)F)])&!$([NH1&!R]C=[NH1;!R])&!$([NH1;R][CX2;R&!$(*([Cl,Br,F,N,I,O]))]=[NH0;R][CX4;R&!$(*([Cl,Br,F,I,N,O,S]))][CX4;R&!$(*([Cl,Br,F,I,N,O,S]))])&!$([NH1]1[CX4;!$(*([Cl,Br,F,I,O,S]))][CX4;!$(*([Cl,Br,F,I,O,S]))][NH0]=[CH0]1)&!$([NH1;!R][C;R&!$(*([Cl,Br,F,I,O]))&!$(*([NH1&R]))]=[NH0;R])&!$([n&H0][c&!$(*([Cl,Br,F,I,O]))][n][c&!$(*([Cl,Br,F,I,O]))]([N])[c])&!$([NH1&R][C&R](=[N&!R])[NH1&R])]
+  Family 196
+EndFeature
+
+DefineFeature CustomF0197 [N,n;!H0]
+  Family 197
+EndFeature
+
+DefineFeature CustomF0198 [$([NH1+0](A)a),$([NH1+0](a)a)]
+  Family 198
+EndFeature
+
+DefineFeature CustomF0199 [#7]
+  Family 199
+EndFeature
+
+DefineFeature CustomF0200 [$(N1([CX4])CCC(CC1)*)]
+  Family 200
+EndFeature
+
+DefineFeature CustomF0201 [$([NH2]C([#6])=O),$([NH1]C([#6])=O)]
+  Family 201
+EndFeature
+
+#DefineFeature CustomF0202 [$([NH0&R]([CX4])([CX4])[CX4])&!$(([NH0]([CX4])([CX4])[CX4].[OH1][C,S,P](=O)))].(c1c[c,n]ccc1)
+#  Family 202
+#EndFeature
+
+#DefineFeature CustomF0203 [$([NH0]([CX4])([CX4])[CX4])&!$(([NH0]([CX4])([CX4])[CX4].[OH1][C,S,P](=O)))].(c1c[c,n]ccc1)
+#  Family 203
+#EndFeature
+
+#DefineFeature CustomF0204 [$([NH1&R]([CX4])([CX4]))&!$(([NH1]([CX4])[CX4].[OH1][C,S,P](=O)))].(c1c[c,n]ccc1)
+#  Family 204
+#EndFeature
+
+#DefineFeature CustomF0205 [$([NH1]([CX4])([CX4]))&!$(([NH1]([CX4])[CX4].[OH1][C,S,P](=O)))].(c1c[c,n]ccc1)
+#  Family 205
+#EndFeature
+
+DefineFeature CustomF0206 [!#1;!#6;!#7;!#8;!#9;!#16;!#17;!#35;!#53]
+  Family 206
+EndFeature
+
+DefineFeature CustomF0207 [#7,#8]-[#6,#15,#16]-[#7,#8]
+  Family 207
+EndFeature
+
+DefineFeature CustomF0208 [#7]-[#6,#16]=[#8]
+  Family 208
+EndFeature
+
+DefineFeature CustomF0209 [$(*=,#,:*);!$(N(=O)=O)]
+  Family 209
+EndFeature
+
+DefineFeature CustomF0210 [$([#7;!H0;!$(*(S(=O)=O)C(F)(F)F);!$(n1nnnc1);!$(n1nncn1)]),$([#7;-])]
+  Family 210
+EndFeature
+
+DefineFeature CustomF0211 [$([#7;v3&!$([nH])&!$([#7](-a)-a)])]
+  Family 211
+EndFeature
+
+DefineFeature CustomF0212 [$([#8]-[#7])]
+  Family 212
+EndFeature
+
+DefineFeature CustomF0213 [$([$([#16]);!$(*=N~O);!$(*~N=O);X1,X2])]
+  Family 213
+EndFeature
+
+DefineFeature CustomF0214 [$([$([#8,#16]);!$(*=N~O);!$(*~N=O);X1,X2]),$([#7;v3;!$([nH]);!$(*(-a)-a)])]
+  Family 214
+EndFeature
+
+DefineFeature CustomF0215 [$([$([#8]);!$(*=N~O);!$(*~N=O);X1,X2])]
+  Family 215
+EndFeature
+
+DefineFeature CustomF0216 [$([A;X4&H1,X3&H0,X5&H2,X6&H3](@*)(@*)~[!#1])]
+  Family 216
+EndFeature
+
+DefineFeature CustomF0217 [$([CH0X4]a)]
+  Family 217
+EndFeature
+
+DefineFeature CustomF0218 [$([CH1X4][N,O,P,S,F,Cl,Br,I]),$([CH0X4][N,O,P,S,F,Cl,Br,I])]
+  Family 218
+EndFeature
+
+DefineFeature CustomF0219 [$([CH2X4]a)]
+  Family 219
+EndFeature
+
+DefineFeature CustomF0220 [$([CH2]=C),$([CH1](=C)A),$([CH0](=C)(A)A)]
+  Family 220
+EndFeature
+
+DefineFeature CustomF0221 [$([CH3][N,O,P,S,F,Cl,Br,I]),$([CH2X4][N,O,P,S,F,Cl,Br,I])]
+  Family 221
+EndFeature
+
+DefineFeature CustomF0222 [$([CH3][a;!c])]
+  Family 222
+EndFeature
+
+DefineFeature CustomF0223 [$([CH3]c)]
+  Family 223
+EndFeature
+
+DefineFeature CustomF0224 [$([CH4]),$([CH3]C),$([CH2](C)C)]
+  Family 224
+EndFeature
+
+DefineFeature CustomF0225 [$([CHX4]a)]
+  Family 225
+EndFeature
+
+DefineFeature CustomF0226 [$([CH](C)(C)C),$([C](C)(C)(C)C)]
+  Family 226
+EndFeature
+
+DefineFeature CustomF0227 [$([CX4][#5]),$([CX4][#14]),$([CX4][#15]),$([CX4][#33]),$([CX4][#34]),$([CX4][#50]),$([CX4][#80])]
+  Family 227
+EndFeature
+
+DefineFeature CustomF0228 [$([C](=C)(a)A),$([C](=C)(c)a),$([CH](=C)a),$([C]=c)]
+  Family 228
+EndFeature
+
+DefineFeature CustomF0229 [$([N+0](=A)A),$([N+0](=A)a),$([N+0](=a)A),$([N+0](=a)a)]
+  Family 229
+EndFeature
+
+DefineFeature CustomF0230 [$([N+0](A)(A)A)]
+  Family 230
+EndFeature
+
+DefineFeature CustomF0231 [$([N+0](a)(A)A),$([N+0](a)(a)A),$([N+0](a)(a)a)]
+  Family 231
+EndFeature
+
+DefineFeature CustomF0232 [$([N+]#A),$([N-]),$([N+](=[N-])=N)]
+  Family 232
+EndFeature
+
+DefineFeature CustomF0233 [$([NH+0](A)A)]
+  Family 233
+EndFeature
+
+DefineFeature CustomF0234 [$([NH0+](A)(A)(A)A),$([NH0+](=A)(A)A),$([NH0+](=A)(A)a),$([NH0+](=[#6])=[#7])]
+  Family 234
+EndFeature
+
+DefineFeature CustomF0235 [$([NH1]),$([OH1][#7])]
+  Family 235
+EndFeature
+
+DefineFeature CustomF0236 [$([NH2+0]A)]
+  Family 236
+EndFeature
+
+DefineFeature CustomF0237 [$([NH2]-[CX4]),$([NH](-[CX4])-[CX4]),$(N(-[CX4])(-[CX4])-[CX4]),$([*;+;!$(*~[*;-])]),$(N=C-N),$(N-C=N)]
+  Family 237
+EndFeature
+
+DefineFeature CustomF0238 [$([NH3+]),$([NH2+]),$([NH+])]
+  Family 238
+EndFeature
+
+DefineFeature CustomF0239 [$([O;H1,-&!$(*-N=O)]),$([S;H1&X2,-&X1]),$([#7;!H0;!$(*(S(=O)=O)C(F)(F)F);!$(n1nnnc1);!$(n1nncn1)]),$([#7;-])]
+  Family 239
+EndFeature
+
+DefineFeature CustomF0240 [$([O;H1,-&!$(*-N=O)])]
+  Family 240
+EndFeature
+
+DefineFeature CustomF0241 [$([O;H1]-[C,S,P]=O),$([*;-;!$(*~[*;+])]),$([NH](S(=O)=O)C(F)(F)F),$(n1nnnc1),$(n1nncn1)]
+  Family 241
+EndFeature
+
+DefineFeature CustomF0242 [$([OH1]C=[#6]),$([OH1]C=[#7]),$([OH1]C=O),$([OH1]C=S),$([OH1][O]),$([OH1][S])]
+  Family 242
+EndFeature
+
+DefineFeature CustomF0243 [$([OH1][CX4]),$([OH1]c),$([OH1][#5]),$([OH1][#14]),$([OH1][#15]),$([OH1][#33]),$([OH1][#33]),$([OH1][#50]),$([BH1]),$([SiH1]),$([PH1]),$([SH1]),$([SnH1])]
+  Family 243
+EndFeature
+
+DefineFeature CustomF0244 [$([OX1-;!N,S])]
+  Family 244
+EndFeature
+
+DefineFeature CustomF0245 [$([OX1-][#16])]
+  Family 245
+EndFeature
+
+DefineFeature CustomF0246 [$([O](C)C),$([O](C)[A;!#6]),$([O]([A;!C])[A;!C])]
+  Family 246
+EndFeature
+
+DefineFeature CustomF0247 [$([O]=C([A;!C])[A;!C]),$([O]=C([A;!C])[a;!c]),$([O]=C([a;!c])[a;!c])]
+  Family 247
+EndFeature
+
+DefineFeature CustomF0248 [$([O]=[#8]),$([O]=[#7]),$([OX1-][#7])]
+  Family 248
+EndFeature
+
+DefineFeature CustomF0249 [$([O]=[CH]C),$([O]=C(C)C),$([O]=C(C)[A;!C]),$([O]=[CH]O),$([O]=[CH2]),$([O]=[CX2]=O),$([O]=[CH]N)]
+  Family 249
+EndFeature
+
+DefineFeature CustomF0250 [$([O]=[CH]c),$([O]=C(C)c),$([O]=C(c)c),$([O]=C(c)[a;!#6]),$([O]=C(c)[A;!C]),$([O]=C(C)[a;!c])]
+  Family 250
+EndFeature
+
+DefineFeature CustomF0251 [$([S+]),$([S-])]
+  Family 251
+EndFeature
+
+DefineFeature CustomF0252 [$([a;X4&H1,X3&H0,X5&H2,X6&H3](@*)(@*)([!#1]))]
+  Family 252
+EndFeature
+
+DefineFeature CustomF0253 [$([c](:a)(:a)=C),$([c](:a)(:a)=N),$([c](:a)(:a)=O)]
+  Family 253
+EndFeature
+
+DefineFeature CustomF0254 [$([c][#5]),$([c][#14]),$([c][#15]),$([c][#33]),$([c][#34]),$([c][#50]),$([c][#80])]
+  Family 254
+EndFeature
+
+DefineFeature CustomF0255 [$([n+0])]
+  Family 255
+EndFeature
+
+DefineFeature CustomF0256 [$([n+])]
+  Family 256
+EndFeature
+
+DefineFeature CustomF0257 [C;!$(C-[!C]);!$(C-C-[!C]);!$(C=,#*);!$(C-C=,#*)]
+  Family 257
+EndFeature
+
+DefineFeature CustomF0258 [C;H1]
+  Family 258
+EndFeature
+
+DefineFeature CustomF0259 [C]=[N,O,P,S,F,Cl,Br,I]
+  Family 259
+EndFeature
+
+DefineFeature CustomF0260 [c](:a)(:a)-C
+  Family 260
+EndFeature
+
+DefineFeature CustomF0261 [c](:a)(:a)-N
+  Family 261
+EndFeature
+
+DefineFeature CustomF0262 [c](:a)(:a)-O
+  Family 262
+EndFeature
+
+DefineFeature CustomF0263 [c](:a)(:a)-S
+  Family 263
+EndFeature
+
+DefineFeature CustomF0264 [c](:a)(:a)-a
+  Family 264
+EndFeature
+
+DefineFeature CustomF0265 [s]
+  Family 265
+EndFeature
+
+DefineFeature CustomF0266 [$([CX4&!$(*~[Cl,Br,I,F,O,N])][a])]
+  Family 266
+EndFeature
+
+DefineFeature CustomF0267 [$([N&H0][a])]
+  Family 267
+EndFeature
+
+DefineFeature CustomF0268 [$([N&H1](C(=O))([CX4])[a])]
+  Family 268
+EndFeature
+
+DefineFeature CustomF0269 [$([O&H0](C(=O))([CX4])[a])]
+  Family 269
+EndFeature
+
+DefineFeature CustomF0270 [$([O&H0][a])]
+  Family 270
+EndFeature
+
+DefineFeature CustomF0271 [$([c]-[a])]
+  Family 271
+EndFeature
+
+DefineFeature CustomF0272 [$(C(#N)[a])]
+  Family 272
+EndFeature
+
+DefineFeature CustomF0273 [$(C(F)(F)(F)[a])]
+  Family 273
+EndFeature
+
+DefineFeature CustomF0274 [$(N(=O)(=O)[a])]
+  Family 274
+EndFeature
+
+DefineFeature CustomF0275 [$(S(=O)(=O)([OH1])[a])]
+  Family 275
+EndFeature
+
+DefineFeature CustomF0276 [$(S(=O)(=O)N)]
+  Family 276
+EndFeature
+
+DefineFeature CustomF0277 [$([CX2&H0](=O)([CX4])[a])]
+  Family 277
+EndFeature
+
+DefineFeature CustomF0278 [$([CX2&H0](=O)([Cl])[a])]
+  Family 278
+EndFeature
+
+DefineFeature CustomF0279 [$([CX2&H0](=O)([OH1])[a])]
+  Family 279
+EndFeature
+
+DefineFeature CustomF0280 [$([CX2&H1](=O)[a])]
+  Family 280
+EndFeature
+
+DefineFeature CustomF0281 [$([Cl,I,F,Br][a])]
+  Family 281
+EndFeature
+
+DefineFeature CustomF0282 c1[c,n,s,o][c,o,n,s]n[c,n,s,o]1
+  Family 282
+EndFeature
+
+DefineFeature CustomF0283 a(!:*):*:*:a!:*
+  Family 283
+EndFeature
+
+DefineFeature CustomF0284 a(-&!:*):*:*:a-&!:*
+  Family 284
+EndFeature
+
+DefineFeature CustomF0285 a(-&!:*):*:a-&!:*
+  Family 285
+EndFeature
+
+DefineFeature CustomF0286 [#8](!@*)!@*
+  Family 286
+EndFeature
+
+DefineFeature CustomF0287 [CX4H3]-[!#6]
+  Family 287
+EndFeature
+
+DefineFeature CustomF0288 [#6!H0]~&@[#6!H0]~&@[#6!H0]~&@[#6!H0]
+  Family 288
+EndFeature
+
+DefineFeature CustomF0289 [#6!H0]~&@[#6!H0]~&@[#6!H0]~&@[#6!H0]~&@[#6!H0]
+  Family 289
+EndFeature
+
+DefineFeature CustomF0290 [#7]~*~*~*~*~*~*~*~*~[#8]
+  Family 290
+EndFeature
+
+DefineFeature CustomF0291 [#9,#17,#35,#53]!@*@*
+  Family 291
+EndFeature
+
+DefineFeature CustomF0292 [#9,#17,#35,#53]-[R]
+  Family 292
+EndFeature
+
+DefineFeature CustomF0293 [#9,#17,#35,#53]~*(~*)~*
+  Family 293
+EndFeature
+
+DefineFeature CustomF0294 [$([#6]-&!@[A!C!H1]-&!@[#6])]
+  Family 294
+EndFeature
+
+DefineFeature CustomF0295 [$([#8X2v2]([#6])[#6])]
+  Family 295
+EndFeature
+
+DefineFeature CustomF0296 [CX4H3]-*~*~a
+  Family 296
+EndFeature
+
+DefineFeature CustomF0297 [CX4H3]-*~*~[R]
+  Family 297
+EndFeature
+
+DefineFeature CustomF0298 [CX4H3]-*~a
+  Family 298
+EndFeature
+
+DefineFeature CustomF0299 [CX4H3]-*~[R]
+  Family 299
+EndFeature
+
+DefineFeature CustomF0300 [#9,#17,#35,#53]~[X4&H1,X3&H0,X5&H2,X6&H3]
+  Family 300
+EndFeature
+
+DefineFeature CustomF0301 *(!@*)!@*
+  Family 301
+EndFeature
+
+DefineFeature CustomF0302 [R](-*-*):a
+  Family 302
+EndFeature
+
+DefineFeature CustomF0303 [R](-*-*)~*:a
+  Family 303
+EndFeature
+
+DefineFeature CustomF0304 [R](-*-*)~*~*:a
+  Family 304
+EndFeature
+
+DefineFeature CustomF0305 [R]~*~*~[!#6]
+  Family 305
+EndFeature
+
+DefineFeature CustomF0306 [R]~*~[!#6]
+  Family 306
+EndFeature
+
+DefineFeature CustomF0307 [!$(*#*);!$([X6&H5,X5&H4,X4&H3,X3&H2,X2&H1,X1])]-&!@[!$(*#*);!$([X6&H5,X5&H4,X4&H3,X3&H2,X2&H1,X1])]
+  Family 307
+EndFeature
+
+DefineFeature CustomF0308 [!a](=*)~*~*~*~[R]
+  Family 308
+EndFeature
+
+DefineFeature CustomF0309 [#6]~&!@[#8]
+  Family 309
+EndFeature
+
+DefineFeature CustomF0310 [#6X3v3-,#6X3v4+0,#6X3v3+]
+  Family 310
+EndFeature
+
+DefineFeature CustomF0311 [#7]~*(~*)~*
+  Family 311
+EndFeature
+
+DefineFeature CustomF0312 [#8,#16]
+  Family 312
+EndFeature
+
+DefineFeature CustomF0313 [X4&H1,X3&H0,X5&H2,X6&H3]~*~*~*~[!#6]
+  Family 313
+EndFeature
+
+DefineFeature CustomF0314 [#7]~[X4&H1,X3&H0,X5&H2,X6&H3]
+  Family 314
+EndFeature
+
+DefineFeature CustomF0315 [X4&H1,X3&H0,X5&H2,X6&H3]~[R]
+  Family 315
+EndFeature
+
+DefineFeature CustomF0316 [R](-*-*)~*~*~*~a
+  Family 316
+EndFeature
+
+DefineFeature CustomF0317 [R](-*-*)~*~*~a
+  Family 317
+EndFeature
+
+DefineFeature CustomF0318 [R](-*-*)~*~a
+  Family 318
+EndFeature
+
+DefineFeature CustomF0319 c1(*)[c;H1][c;H1]c(*)[c;H1][c;H1]1
+  Family 319
+EndFeature
+
+DefineFeature CustomF0320 [$([NH0;X3;+0]([CX4])([CX4])[a])]
+  Family 320
+EndFeature
+
+DefineFeature CustomF0321 [$([CX4;H1](*)1[CX4;H2][CX4;H2][CX4;H2][CX4;H2][CX4;H2]1)]
+  Family 321
+EndFeature
+
+DefineFeature CustomF0322 [N,n&H0]
+  Family 322
+EndFeature
