@@ -12,6 +12,11 @@ class ServerSettings(BaseSettings):
     LOG_CONFIG: str = "log_config.yaml"
 
 
+class DatabaseSettings(BaseSettings):
+    DB_URL: str = os.environ["MONGODB_URL"]
+    DB_NAME: str = "qsar"
+
+
 class Settings(ServerSettings):
     pass
 
