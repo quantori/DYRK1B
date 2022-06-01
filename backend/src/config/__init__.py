@@ -17,7 +17,7 @@ class DatabaseSettings(BaseSettings):
     DB_NAME: str = "qsar"
 
 
-class Settings(ServerSettings):
+class Settings(DatabaseSettings, ServerSettings):
     pass
 
 
