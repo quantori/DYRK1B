@@ -1,0 +1,50 @@
+[flake8]
+count=True
+statistics=True
+show-source=True
+
+application-import-names=apps config routers main
+
+max-line-length=120
+import-order-style=smarkets
+docstring-convention=pep257
+
+ignore=
+    # A002 argument "object" is shadowing a python builtin
+    A002,
+    # A003 class attribute "id" is shadowing a python builtin
+    A003,
+    # B008 Do not perform function calls in argument defaults.
+    B008,
+    # B305 `.next()` is not a thing on Python 3.
+    B305,
+    # D100 Missing docstring in public module
+    D100,
+    # D101 Missing docstring in public class
+    D101,
+    # D102 Missing docstring in public method
+    D102,
+    # D103 Missing docstring in public function
+    D103,
+    # D104 Missing docstring in public package
+    D104,
+    # D105 Missing docstring in magic method
+    D105,
+    # D106 Missing docstring in public nested class
+    D106,
+    # D107 Missing docstring in __init__
+    D107,
+    # E126 continuation line over-indented for hanging indent
+    E126,
+    # E127 continuation line over-indented for visual indent
+    E127,
+    # W504 line break after binary operator
+    W504,
+    # I101 Imported names are in the wrong order
+    I101,
+
+max-cognitive-complexity=20
+max-complexity=20
+
+per-file-ignores=
+    backend/config/__init__.py:E501
