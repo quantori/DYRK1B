@@ -31,7 +31,7 @@ jobs:
 
       - name: Run isort
         run: |
-          isort ./backend/src -c
+          isort ./backend/src -c --settings-path=backend/.isort.cfg
 
 #      - name: Run flake8
 #        run: |
