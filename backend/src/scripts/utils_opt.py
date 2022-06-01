@@ -1,12 +1,9 @@
 import numpy as np
-
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.preprocessing import StandardScaler
-
-from sklearn.model_selection import GridSearchCV
-from sklearn.model_selection import KFold
-from sklearn.metrics import r2_score
 from sklearn import svm
+from sklearn.metrics import r2_score
+from sklearn.model_selection import GridSearchCV, KFold
+from sklearn.preprocessing import MinMaxScaler, StandardScaler
+
 
 def RFErank( model ) :
     supp_vect = model.support_vectors_.T
@@ -413,8 +410,7 @@ def ClfTrainOptRFE(XX_train_all, yy_train_all, clf_type='NuSVR', return_idx_sele
 def ClfTrainFinalDefault(X_train_all, y_train_all, clf_type='NuSVR', return_ranked_features=False) :
 
     import numpy as np
-    from sklearn.preprocessing import MinMaxScaler
-    from sklearn.preprocessing import StandardScaler
+    from sklearn.preprocessing import MinMaxScaler, StandardScaler
 
     y_mms = MinMaxScaler().fit( y_train_all.reshape(-1,1) )
     x_std = StandardScaler().fit( X_train_all )
@@ -477,9 +473,8 @@ def ClfTrainFinalOpt(X_train_all, y_train_all, clf_type='NuSVR', return_ranked_f
 
 
 def ClfTrainFinalOptRFE(X_train_all, y_train_all, clf_type='NuSVR') :
-#clf_type='GPy' # 'GPy' 'NuSVR' 'RFR'
-    from sklearn.preprocessing import MinMaxScaler
-    from sklearn.preprocessing import StandardScaler
+_type='GPy' # 'GPy' 'NuSVR' 'RFR'
+    from sklearn.preprocessing import MinMaxScaler, StandardScaler
             
     y_mms = MinMaxScaler().fit( y_train_all.reshape(-1,1) )
     x_std = StandardScaler().fit( X_train_all )
@@ -502,8 +497,7 @@ def ClfTrainFinalOptRFE(X_train_all, y_train_all, clf_type='NuSVR') :
 
     
 def ClfTrainFinalDefaultRFE(X_train_all, y_train_all, clf_type='NuSVR') :
-    from sklearn.preprocessing import MinMaxScaler
-    from sklearn.preprocessing import StandardScaler
+    from sklearn.preprocessing import MinMaxScaler, StandardScaler
             
     y_mms = MinMaxScaler().fit( y_train_all.reshape(-1,1) )
     x_std = StandardScaler().fit( X_train_all )

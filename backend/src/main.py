@@ -2,12 +2,11 @@ import logging
 
 from fastapi import FastAPI, Request, Response
 from motor.motor_asyncio import AsyncIOMotorClient
-
 from uvicorn import run
+
 from apps.authorization.routers import router as authorization_router
 from apps.engine.routers import router as engine_router
 from apps.entity.routers import router as entity_router
-
 from config import settings
 
 log = logging.getLogger(__name__)

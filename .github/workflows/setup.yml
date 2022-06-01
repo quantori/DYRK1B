@@ -33,10 +33,10 @@ jobs:
         run: |
           isort ./backend/src -c
 
-      - name: Run flake8
-        run: |
-          python -m flake8 backend/src --config=backend/.flake8
-
-      - name: Run pylint
-        run: |
-          python -m pylint backend/src --rcfile=backend/pylintrc
+#      - name: Run flake8
+#        run: |
+#          python -m flake8 backend/src --config=backend/.flake8
+#
+#      - name: Run pylint
+#        run: |
+#          python -m pylint backend/src --rcfile=backend/pylintrc

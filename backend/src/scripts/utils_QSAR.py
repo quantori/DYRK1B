@@ -1,9 +1,9 @@
 import numpy as np
 import pandas as pd
-from sklearn.preprocessing import StandardScaler, MinMaxScaler
-from sklearn.metrics import r2_score
-
 import utils_opt
+from sklearn.metrics import r2_score
+from sklearn.preprocessing import MinMaxScaler, StandardScaler
+
 
 #%% QSAR defs:
 def build_QSAR( df_train_fps, y_NAME = "Potency", runRFEselector = True, clf_type = 'NuSVR', iter_MAX = 0 ):

@@ -1,8 +1,8 @@
 #%% imports, declarations:
 import pandas as pd
 import utils_FPS
-from utils_QSAR import build_QSAR, apply_QSAR
 from sklearn.metrics import r2_score
+from utils_QSAR import apply_QSAR, build_QSAR
 
 fname_TRAIN = "DrugsTrain.csv"
 fname_TEST  = "DrugsTest.csv"

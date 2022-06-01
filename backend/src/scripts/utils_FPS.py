@@ -1,9 +1,8 @@
 import numpy as np
-import pandas as pd
-from rdkit.Chem import AllChem as Chem
 import oddt
+import pandas as pd
 from oddt.shape import electroshape
-
+from rdkit.Chem import AllChem as Chem
 from rdkit.Chem import ChemicalFeatures
 
 SD_FP_LENGTH   = 322
@@ -60,12 +59,10 @@ def get_FPSD_from_mol( mol ):
 
 def get_RDkit_fps_by_name(smiles, fp_name='maccs', nbits=1024, longbits=16384, use3D=True):
     import numpy as np
-    from rdkit import Chem
-    from rdkit import DataStructs
-    from rdkit.Chem import MACCSkeys, AllChem
+    from rdkit import Chem, DataStructs
     from rdkit.Avalon import pyAvalonTools as fpAvalon
     # from rdkit.Chem.AtomPairs import Pairs, Torsions
-    from rdkit.Chem import rdMolDescriptors    
+    from rdkit.Chem import AllChem, MACCSkeys, rdMolDescriptors    
 
     m = Chem.MolFromSmiles(smiles)
     if use3D == True :
