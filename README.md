@@ -1,0 +1,3 @@
+This repository contains the DYRK-1A homology model (./homology_model) as well the structures (./lead_structures) of the top 3 selective DYRK-1B lead 
+compounds from the optimization procedure that we have reported in our paper 
+[V. Alexandrov et al, "Novel Efficient Multistage Lead Optimization Pipeline Experimentally Validated for DYRK1B Selective Inhibitors", J.Med.Chem. (2022)](https://pubs.acs.org/doi/10.1021/acs.jmedchem.2c00988).
